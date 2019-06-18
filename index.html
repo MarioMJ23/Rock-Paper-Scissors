@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper & Scissors</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="mainContainer" class="main-container">
+		<div id="headerGame" class="header-game">
+			<h1 class="tittle-game">
+				Let's play rock, paper, scissors!
+			</h1>
+			<div class="score-container">
+				<h3 class="score-tittle">
+					SCORE
+				</h3>
+				<p class="score-player score-players">
+					Tú: <span id="scoreCounterPlayer" class="score-counter-player score-counter">0</span>
+				</p>
+				<p class="score-pc score-players">
+					PC:	<span id="scoreCounterPC" class="score-counter-pc score-counter">0</span>
+				</p>
+			</div>
+		</div>
+		<div id="inputsContainer" class="inputs-container">
+			<h2 class="inputs-tittle">
+				Elije tu jugada
+			</h2>
+			<div id="inputsButtons" class="inputs-buttons">
+				<button id="rockButton" class="rock-button my-buttons" onclick="doPlay(1)">Piedra</button>
+				<button id="paperButton" class="paper-button my-buttons" onclick="doPlay(2)">Papel</button>
+				<button id="scissorsButton" class="scissors-button my-buttons" onclick="doPlay(3)">Tijera</button>
+			</div>
+			<div id="outputsContainer" class="outputs-container">
+				<h3 class="outputPlayer choices">
+					Elejiste: <span id="playerChoice" class="player-choice">Tijera</span>
+				</h3>
+				<h3 class="outputPC choices">
+					La PC eligió: <span id="PCChoice" class="pc-choice">Tijera</span>
+				</h3>
+				<h3 class="result">
+					<span id="result" class="result">Empataste :/</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/index.js"></script>
+</html>
